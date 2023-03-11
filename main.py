@@ -133,7 +133,7 @@ def Update():
 
 	# function triggers once to enable drag mode and record fixed data about mouse and camera position until dragging is complete
 	if (Controller.userClick[2] and not Controller.userPrevClick[2]):
-		Camera.dragPin = [Camera.pos[0], Camera.pos[0]]
+		Camera.dragPin = [Camera.pos[0], Camera.pos[1]]
 		Camera.userMousePin = [Controller.userMousePos[0], Controller.userMousePos[1]]
 		Camera.dragMode = True
 
